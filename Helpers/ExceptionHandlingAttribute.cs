@@ -25,7 +25,7 @@ namespace WebApi.Helpers
             }
             catch (Exception ex)
             {
-                
+                await HandleExceptionMessageAsync(context, ex);
             }
         }
         private static Task HandleExceptionMessageAsync(HttpContext context, Exception exception)

@@ -32,8 +32,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                int y = 0;
-                int x = 100 / y;
+             
                 var users = _userService.GetAll();
                 return Ok(users);
             }
